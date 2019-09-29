@@ -15,44 +15,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4s-Ob-F13">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="output-onlinepngtools" translatesAutoresizingMaskIntoConstraints="NO" id="7x0-yf-HcH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BottomGradient copy" translatesAutoresizingMaskIntoConstraints="NO" id="zyQ-u0-DrG">
+                                <rect key="frame" x="0.0" y="768" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Total" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4s-Ob-F13">
                                 <rect key="frame" x="20" y="90" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-Ws-8pO">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Tip Percentage" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-Ws-8pO">
                                 <rect key="frame" x="20" y="132" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEq-Q1-uG0">
-                                <rect key="frame" x="142" y="197" width="129" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Calculate"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip: $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRH-n6-gK3">
-                                <rect key="frame" x="100" y="248" width="214" height="55"/>
+                                <rect key="frame" x="127" y="282" width="160" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="QlF-IX-TvI"/>
+                                    <constraint firstAttribute="height" constant="55" id="uSA-Q4-RFE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEq-Q1-uG0">
+                                <rect key="frame" x="110" y="193" width="194" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="IPT-33-fJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Calculate"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="CEq-Q1-uG0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="0xm-Oo-2EX"/>
-                            <constraint firstItem="CEq-Q1-uG0" firstAttribute="top" secondItem="3zy-Ws-8pO" secondAttribute="bottom" constant="31" id="1g8-qX-4pW"/>
-                            <constraint firstItem="TRH-n6-gK3" firstAttribute="top" secondItem="CEq-Q1-uG0" secondAttribute="bottom" constant="15" id="Trm-ux-P1G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CEq-Q1-uG0" secondAttribute="trailing" constant="143" id="YR6-Vh-UKc"/>
-                            <constraint firstItem="TRH-n6-gK3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="ZKz-RJ-Xav"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CEq-Q1-uG0" secondAttribute="trailing" constant="110" id="BJE-OI-25Q"/>
+                            <constraint firstItem="CEq-Q1-uG0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="Pyy-kP-gc4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TRH-n6-gK3" secondAttribute="trailing" constant="127" id="Wlh-gH-7c3"/>
                             <constraint firstItem="n4s-Ob-F13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bna-Yf-vFx"/>
                             <constraint firstItem="n4s-Ob-F13" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="hcR-Wz-QbY"/>
+                            <constraint firstItem="CEq-Q1-uG0" firstAttribute="top" secondItem="3zy-Ws-8pO" secondAttribute="bottom" constant="27" id="jwP-jh-l65"/>
                             <constraint firstItem="3zy-Ws-8pO" firstAttribute="top" secondItem="n4s-Ob-F13" secondAttribute="bottom" constant="8" id="qyH-zE-xgJ"/>
+                            <constraint firstItem="TRH-n6-gK3" firstAttribute="top" secondItem="CEq-Q1-uG0" secondAttribute="bottom" constant="32" id="rMr-2c-O74"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n4s-Ob-F13" secondAttribute="trailing" constant="20" id="tNj-oF-94a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TRH-n6-gK3" secondAttribute="trailing" constant="100" id="uZB-5z-Jz9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3zy-Ws-8pO" secondAttribute="trailing" constant="20" id="xLi-9r-oPd"/>
+                            <constraint firstItem="TRH-n6-gK3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="xYo-Zn-x9w"/>
                             <constraint firstItem="3zy-Ws-8pO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yam-6U-yh0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,4 +76,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BottomGradient copy" width="414" height="298"/>
+        <image name="output-onlinepngtools" width="400" height="266.5"/>
+    </resources>
 </document>
